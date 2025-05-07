@@ -1,18 +1,36 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import SOHT01 from '../views/SOHT01.vue' // 确保路径正确
-
+import Border  from "@/components/Border.vue";
+import BorderQuery from "@/components/BorderQuery.vue";
+import BorderResult from "@/components/BorderResult.vue";
 const routes = [
     // 如果需要有首页，可以添加如下路由
     {
         path: '/',
         name: 'home',
-        component: () => import('../views/HomeView.vue') // 需要创建这个文件或使用已有组件
+        component: () => import('../components/login.vue') // 需要创建这个文件或使用已有组件
     },
     {
         path: '/soht01',
         name: 'SOHT01',
         component: SOHT01
+    },
+    {
+        path: '/border',
+        name: 'BORDER',
+        component: Border
+    },
+    {
+        path: '/borderQuery',
+        name: 'BORDERQUERY',
+        component: BorderQuery
+    },
+    {
+        path: '/borderResult',
+        name: 'BORDERRESULT',
+        component: BorderResult
     }
+
 ]
 
 const router = createRouter({

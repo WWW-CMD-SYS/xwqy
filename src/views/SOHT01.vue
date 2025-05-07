@@ -1,4 +1,9 @@
+
 <template>
+<!--  页面背景公共组件-->
+    <Border/>
+    <BorderQuery/>
+    <BorderResult/>
   <div>
     <el-button type="primary" @click="addNewRow" style="margin-bottom: 20px">
       新增 +
@@ -68,7 +73,9 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-
+import Border from '@/components/Border.vue'/*页面背景公共组件*/
+import BorderQuery from "@/components/BorderQuery.vue"/*查询条件*/
+import BorderResult from "@/components/BorderResult.vue"/*结果集*/
 // 初始化表格数据
 const tableData = ref([
   {
