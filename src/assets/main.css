@@ -7,3 +7,57 @@
 .global{
   background-color: #316a6c;
 }
+
+.border {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(182, 177, 177, 0.18);
+}
+.border-inner {
+  width: 100%;
+  height: 36px;
+  background:linear-gradient(to right, #2b76DB, #599ff6);
+}
+.border-inner .b-f {
+  padding: 6px 50px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.border-query {
+  height: auto;
+  border:  1px solid #C0DCFF;
+  background: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+.b-content {
+  width: 100%;
+  height: 30px;
+  background: #DBEFFF;
+  z-index: 0;
+}
+.border-result {
+  border:  1px solid #55bcbf;
+  background: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+.b-content {
+  width: 100%;
+  height: 30px;
+  background: #DBEFFF;
+}
+.b-c{
+  padding-left:  20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2F80ED;;
+}
+.c-x{
+  margin: 10px 20px;
+}
+.c-h{
+  margin:  10px 20px;
+  height: 100px;
+}
