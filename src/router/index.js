@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import SOHT01 from '../views/SOHT01.vue' // 确保路径正确
-import Border  from "@/components/Border.vue";
+import HomeView from '../views/HomeView.vue' // 确保路径正确
 import BorderQuery from "@/components/BorderQuery.vue";
 import BorderResult from "@/components/BorderResult.vue";
 const routes = [
@@ -11,14 +11,14 @@ const routes = [
         component: () => import('../components/login.vue') // 需要创建这个文件或使用已有组件
     },
     {
-        path: '/soht01',
+        path: '/SOHT01',
         name: 'SOHT01',
         component: SOHT01
     },
     {
-        path: '/border',
-        name: 'BORDER',
-        component: Border
+        path: '/HomeView',
+        name: 'HomeView',
+        component: HomeView
     },
     {
         path: '/borderQuery',
