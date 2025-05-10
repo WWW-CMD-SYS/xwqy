@@ -30,7 +30,7 @@
           </el-sub-menu>
         </el-menu>
       </el-header>
-      <el-container>
+      <el-container >
 <!--        左侧菜单-->
         <el-aside>
             <el-col :span="24">
@@ -42,7 +42,7 @@
                   text-color="#fff"
                   @open="handleOpen"
                   @close="handleClose"
-                  style="max-height: 100vh; overflow-y: auto;width: fit-content; min-width: 280px;"
+                  style="height: 88vh; overflow-y: auto;width: fit-content; min-width: 280px;"
               >
                 <el-sub-menu index="1">
                   <template #title><el-icon><FolderChecked /></el-icon>合同管理</template>
@@ -132,10 +132,14 @@
                   </el-sub-menu>
                 </el-sub-menu>
               </el-menu>
-            </el-col>
+            </el-col style="height: 100vh; overflow-y: auto;">
         </el-aside>
 <!--        右侧内容-->
-        <el-main>Main</el-main>
+        <el-main style="padding: 1px 1px 1px 1px;overflow-y: hidden">
+          <div style="height: 88vh">
+            <el-image style="width: 100%; height: 100%;" src="src/assets/home-img.png" fit="cover" ></el-image>
+          </div>
+        </el-main>
       </el-container>
     </el-container>
   </div>
@@ -143,8 +147,7 @@
 
 <script lang="ts" setup>
 import {ref} from 'vue'
-import {Search,Avatar,CirclePlus,} from '@element-plus/icons-vue'
-import {Document, Menu as IconMenu, Location, Setting} from '@element-plus/icons-vue'
+import {Search} from '@element-plus/icons-vue'
 const activeIndex2 = ref('1')
 const handleSelect = (key: string, keyPath: string[]) => {
   console.log(key, keyPath)
